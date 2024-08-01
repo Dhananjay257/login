@@ -5,75 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Main Content -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row main-content bg-success text-center">
-            <div class="col-md-4 text-center company__info">
-                <img src="https://dhananjay257.github.io/college-signup/images/IMG_20240722_170951.477-removebg-preview.png" alt="" height="60" width="200px">
-                <h4 class="mt-5">OUR CLIENTS</h4>
-
-                <div class="l-panel mt-5 mb-5">
-                    <!-- <div class="l-head mt-5">
-                        <h1 class="fw-600">Let's Get Started</h1>
-                    </div> -->
-                    <!-- <div class="l-content mt-2 mb-5">
-                        <p>"Forge Alumnus is a cutting-edge platform linking universities and industries. It offers networking, mentoring, hackathons, workshops, and updates on internships and job opportunities, serving as a vital resource for industry-related information."</p>
-                    </div> -->
-                    <div id="carouselExampleIndicators" class="carousel slide left-panel" data-bs-ride="carousel">
+            <div class="col-md-6 text-center company__info px-0">
+                <div class="l-panel ">
+                   
+                    <div class="l-heading">
+                        <div class="logo d-flex mt-5">
+                            <img src="https://dhananjay257.github.io/college-signup/images/IMG_20240722_170951.477-removebg-preview.png"
+                                alt="" height="60" width="170px">
+                        </div>
+                        <div class="fa-head  " style="text-align: left; padding-left: 80px;" >
+                            <h3 class="fw-bold display-5" style="margin-top: 20px;">
+                                Welcome to <br> Forge Alumnus 
+                             </h3>
+                             <p style="opacity: 0.8;">The Premier Industry Institute Interaction <br> and Career Discovery Platform</p>
+                        </div>
+                    </div>
+                    <div class="l-head" style="margin-top: 100px;">
+                        <h5 class="fw-600 ">Our Associates</h5>
+                        <div id="carouselExampleIndicators" class="carousel slide left-panel bg-white p-2 mt-4"
+                        data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <!-- <div class="carousel-item">
-                               <img src="https://kgr.ac.in/wp-content/uploads/2023/04/Logo-Final-scaled.jpg" alt="KG Reddy">
-                            </div> -->
                             <div class="carousel-item ">
-                                <img src="data:image/png;base64,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" alt="">
-                             </div>
-                            <div class="carousel-item ">
-                                <img src="https://media.licdn.com/dms/image/C560BAQGr68F_VVeOgQ/company-logo_200_200/0/1679730455527/mlr_institute_of_technology_logo?e=2147483647&v=beta&t=WhAgLqZ0IfP7H0piiry4RssXzNDUkupr-V-Apr6b_84" alt="KG Reddy">                           
+                                <ul class="d-flex justify-content-center" style="gap:80px">
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/32/tua4d5yCddrD7LRtQHbpPcyc4JlA6Hp0PKKpkIKy.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/37/OctRqzqCQqnQ848XQ1Ux0rYNaga4o6JSUrTkKAF6.png">
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <div class="carousel-item  ">
-                                  <img src="https://ilogo.in/ajax/thumbnail.php?id=211902&width=540&height=540&face=front&force=1" alt="">                      
-                            </div> -->
+                            <div class="carousel-item ">
+                                <ul class="d-flex justify-content-center" style="gap:80px">
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/32/tua4d5yCddrD7LRtQHbpPcyc4JlA6Hp0PKKpkIKy.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/37/OctRqzqCQqnQ848XQ1Ux0rYNaga4o6JSUrTkKAF6.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png">
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="carousel-item active">
-                                <img src="data:image/jpeg;base64,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" alt="KG Reddy">     
+                                <ul class="d-flex justify-content-center" style="gap:80px">
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate//ItHHirt1yunGICMy9J8ynz7GAa9FjYgMGAT2HBTB.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/35/VvpoWqmgcF8Hcx0CHGNO5dtE6xnsBLZGrTl3k7xE.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/39/16PYUojhJIRVaBwB9kGqzOH1u7dcxFK2ALVrJsky.jpg">
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <div class="carousel-item">
-                                                            
-                            </div> -->
                         </div>
                         <div class="carousel-indicators mt-5" style="margin-top: 5vh;">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button> -->
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
                         </div>
                     </div>
-                    
-                </div>
-                <!-- <span class="company__logo"><h2><span class="fa fa-android"></span></h2></span> -->
-                <!-- <h4 class="company_title">Your Company Logo</h4> -->
-            </div>
-            <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
-                <div class="container-fluid">
-                    <div class="row mt-3 fw-bold">
-                        <h5 class="fw-bold">WELCOME TO FORGE ALUMNUS!!!</h5>
                     </div>
-                    <div class="row mt-2">
-                        <h6 class="fw-bolder">LOGIN</h6>
+                    
+
+                </div>
+            </div>
+            <!-- <div class="col-md-6 col-xs-12 col-sm-12 login_form "> -->
+            <div class="col-md-6 col-xs-12 col-sm-12 login_form p-5 ">
+                <div class="container-fluid p-3 mt-5">
+                    <div class="row mt-3">
+                        <h6 class="fw-light">Log in and continue <br> <span style="opacity: 0.5; font-size: small; ">your journey of growth and excellence.</span></h6>
                     </div>
 
                     <div class="row mt-2">
                         <form class="form-group needs-validation" novalidate>
                             <div class="row">
                                 <div class="form-group input-group mb-3">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-label="Username" required>
+                                    <input type="email" name="email" id="email" class="form-control p-2"
+                                        placeholder="Email" aria-label="Username" required>
                                     <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
                                     <div class="invalid-feedback">
                                         Email required.
@@ -81,25 +106,26 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group input-group mb-3">
-                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" aria-label="Password" required>
+                                <div class="form-group input-group mt-2">
+                                    <input type="password" name="password" id="password" class="form-control p-2 "
+                                        placeholder="Password" aria-label="Password" required>
                                     <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
                                     <div class="invalid-feedback">
                                         Password required.
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group d-flex justify-content-center">
+                            <div class="form-group d-flex justify-content-center  mt-4">
                                 <input id="customCheck1" type="checkbox" checked="" class="custom-control-input">
                                 <label for="customCheck1" class="custom-control-label">Remember me</label>
                             </div>
-                            <div class="row d-flex justify-content-center">
+                            <div class="row d-flex justify-content-center mt-2">
                                 <input type="submit" value="Login" class="btn btn-primary">
                             </div>
                         </form>
                     </div>
                     <div class="row">
-                        <p>Forget password? <a href="#">click here</a></p>
+                        <p>Forgot password? <a href="#">click here</a></p>
                     </div>
                 </div>
             </div>
@@ -109,7 +135,7 @@
     <div class="container-fluid text-center footer">
         <!-- Coded with &hearts; by <a href="https://bit.ly/yinkaenoch">Yinka.</a></p> -->
     </div>
-     
+
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
@@ -133,12 +159,16 @@
         })()
     </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlRWl3ecld3mJ3p8JI7lflFhbWIe4GkSyboJfElU4rK3s4ojb6FD6b21rsD" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGqFnmTtlZCHy8R8KL5QOP6zM1z0vZA9uGIlRvnD/7g/XE7AB5GOq2CMu1T" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- <script src="script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXlRWl3ecld3mJ3p8JI7lflFhbWIe4GkSyboJfElU4rK3s4ojb6FD6b21rsD"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGqFnmTtlZCHy8R8KL5QOP6zM1z0vZA9uGIlRvnD/7g/XE7AB5GOq2CMu1T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
