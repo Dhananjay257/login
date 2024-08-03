@@ -4,6 +4,9 @@ body{
 	padding: 0px;
 	border: 0px;
 	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .main-content{
 	/* height: 90vh;
@@ -15,14 +18,16 @@ body{
 	display: flex;
 	overflow-y: hidden; */
 
-	height: 90vh ;
-	margin: auto;
-	margin-top: 40px;
+	height: 650px ;
+	margin: 1rem auto;
+	/* margin-top: 5vh; */
     width: 70vw;
     border-radius: 6px;
     background-color:white;
     box-shadow: 0px 0px 3px;
     position: relative;
+	display: flex;
+	justify-content: center;
     overflow: hidden;
 }
 .logo img{
@@ -30,7 +35,7 @@ body{
 	top:90px;
 }
 .company__info{
-	background-color: #005efe;
+	background-color: #3b37ff;
 	height: 100%;
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
@@ -39,20 +44,21 @@ body{
 	justify-content: center;
 	color: #fff;
 }
-/* 
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 768px) {
 	.main-content{width: 90%;}
 	.company__info{
 		display: none;
 	}
 	.login_form{
+		width: 100%;
 		border-top-left-radius:6px;
 		border-bottom-left-radius:6px;
 	}
 }
 @media screen and (min-width: 642px) and (max-width:800px){
 	.main-content{width: 70%;}
-} */
+}
 
 .login_form{
 	background-color: #fff;
@@ -84,15 +90,15 @@ form{
 	transition: all .5s ease;
 	width: 70%;
 	border-radius: 30px;
-	color:#005efe;
+	color:#3b37ff;
 	font-weight: 600;
 	background-color: #fff;
-	border: 1px solid #005efe;
+	border: 1px solid #3b37ff;
 	margin-top: 1.5em;
 	margin-bottom: 1em;
 }
 .btn:hover, .btn:focus{
-	background-color: #005efe;
+	background-color: #3b37ff;
 	color:#fff;
 }
 .carousel {
