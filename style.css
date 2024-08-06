@@ -1,114 +1,133 @@
-body{
+body {
     font-family: "Poppins", sans-serif;
-	background-color:  #d1d8e0;
-	padding: 0px;
-	border: 0px;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    background-color: #d1d8e0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure body takes full height */
 }
-.main-content{
-	/* height: 90vh;
-	width: 90%;
-	border-radius: 6px;
-	box-shadow: 0 5px 5px rgba(0,0,0,.4);
-	/* border: 2px solid red; */
-	/*margin: 5em auto;
-	display: flex;
-	overflow-y: hidden; */
 
-	height: 650px ;
-	margin: 1rem auto;
-	/* margin-top: 5vh; */
-    width: 70vw;
+
+.custom-container {
+    height: 100%;
+    width: 90%;
+    max-width: 1200px; /* Set a maximum width */
+	max-height: 650px;
     border-radius: 6px;
-    background-color:white;
+    background-color: white;
     box-shadow: 0px 0px 3px;
     position: relative;
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
+    margin: 1rem auto;
 }
-.logo img{
-	position: relative;
-	top:90px;
+
+.logo img {
+    position: relative;
+    top: 90px;
 }
-.company__info{
-	background-color: #3b37ff;
-	height: 100%;
-	border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: #fff;
+.mob-logo{
+	display: none;
+}
+
+.company__info {
+    background-color: #3b37ff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 @media screen and (max-width: 768px) {
-	.main-content{width: 90%;}
-	.company__info{
-		display: none;
+    .main-content {
+        width: 90%;
+    }
+
+    .company__info {
+        display: none;
+    }
+	.mob-logo{
+		display: block;
 	}
-	.login_form{
-		width: 100%;
-		border-top-left-radius:6px;
-		border-bottom-left-radius:6px;
-	}
-}
-@media screen and (min-width: 642px) and (max-width:800px){
-	.main-content{width: 70%;}
+
+    .login_form {
+        width: 100%;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
 }
 
-.login_form{
-	background-color: #fff;
-	border-top-right-radius:6px;
-	border-bottom-right-radius:6px;
-	border-top:1px solid white;
-	border-right:1px solid white;
+@media screen and (min-width: 642px) and (max-width: 800px) {
+    .main-content {
+        width: 70%;
+    }
 }
-form{
-	padding: 0 2em;
+
+.login_form {
+    background-color: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
 }
-.form__input{
-	width: 100%;
-	border:0px solid transparent;
-	border-radius: 0;
-	border-bottom: 1px solid #aaa;
-	padding: 1em .5em .5em;
-	padding-left: 2em;
-	outline:none;
-	margin:1.5em auto;
-	transition: all .5s ease;
+
+form {
+    padding: 0 2em;
 }
-.form__input:focus{
-	border-bottom-color: #008080;
-	box-shadow: 0 0 5px rgba(0,80,80,.4); 
-	border-radius: 4px;
+
+.form__input {
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 1em .5em .5em;
+    padding-left: 2em;
+    outline: none;
+    margin: 1.5em auto;
+    transition: all .5s ease;
 }
-.btn{
-	transition: all .5s ease;
-	width: 70%;
-	border-radius: 30px;
-	color:#3b37ff;
-	font-weight: 600;
-	background-color: #fff;
-	border: 1px solid #3b37ff;
-	margin-top: 1.5em;
-	margin-bottom: 1em;
+
+.form__input:focus {
+    border-bottom-color: #008080;
+    box-shadow: 0 0 5px rgba(0, 80, 80, .4);
+    border-radius: 4px;
 }
-.btn:hover, .btn:focus{
-	background-color: #3b37ff;
-	color:#fff;
+
+.btn {
+    transition: all .5s ease;
+    width: 70%;
+    border-radius: 30px;
+    color: #3b37ff;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #3b37ff;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }
+
+.btn:hover,
+.btn:focus {
+    background-color: #3b37ff;
+    color: #fff;
+}
+
 .carousel {
     width: 100%;
     height: 100px;
 }
-.logo{
-	position: relative;
-	top: -145px;
+
+.logo {
+    position: relative;
+    top: -145px;
 }
-.carousel-inner img{
-	height: 90px;
+
+.carousel-inner img {
+    height: 90px;
 }

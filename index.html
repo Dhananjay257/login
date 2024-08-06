@@ -11,32 +11,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Add styles to position the particles behind the content */
+        input::placeholder{
+            font-size: small;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
     <!-- Main Content -->
-    <div class="container" style="margin: auto;">
-        <div class="row main-content bg-success text-center">
-            <div class="col-md-6 text-center company__info px-0">
-                <div class="l-panel ">
-                    
-                        <div class="logo d-flex mb-3">
-                            <img src="asset\Logo W.png" onclick="" height="65" width="auto">
-                        </div>
-                        <div class="fa-head d-flex flex-column align-items-center  " style="text-align: left;" >
-                            <h3 class="ps-4 display-5" >
-                                Welcome to <br> Forge Alumnus 
-                             </h3>
-                             <p style="opacity: 0.8;">The Premier Industry Institute Interaction <br> and Career Discovery Platform</p>
-                        </div>
-            
-                    <div class="l-head" style="margin-top: 100px;">
-                        <h5 class="fw-600 ">Our Associates</h5>
-                        <div id="carouselExampleIndicators" class="carousel slide left-panel bg-white p-2 mt-4"
+    <div class="container custom-container row px-0">
+        <!-- <div class="row main-content text-center"> -->
+            <div class="col-md-6 text-align-left company__info px-0">
+                <div class="logo d-flex mb-3">
+                    <img src="asset\Logo W.png" height="70" width="auto">
+                </div>
+                <div class="fa-head d-flex flex-column align-items-center" style="text-align: left;">
+                    <h3 class="ps-4 display-5">
+                        Welcome to <br> Forge Alumnus
+                    </h3>
+                    <p style="opacity: 0.8;">The Premier Industry Institute Interaction <br> and Career Discovery Platform</p>
+                </div>
+
+                <div class="l-head" style="margin-top: 100px;">
+                    <h5 class="fw-600 d-flex justify-content-center">Our Associates</h5>
+                    <div id="carouselExampleIndicators" class="carousel slide left-panel bg-white p-2 mt-4"
                         data-bs-ride="carousel">
-                        <div class="carousel-inner" >
+                        <div class="carousel-inner">
                             <div class="carousel-item ">
-                                <ul class="d-flex justify-content-center" style="gap:20px" >
+                                <ul class="d-flex justify-content-center" style="gap:20px">
                                     <li><img src="https://forgealumnus.com/storage/Gallery/associate/32/tua4d5yCddrD7LRtQHbpPcyc4JlA6Hp0PKKpkIKy.png">
                                     </li>
                                     <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png">
@@ -47,7 +63,7 @@
                                 </ul>
                             </div>
                             <div class="carousel-item ">
-                                <ul class="d-flex justify-content-center" style="gap:20px" >
+                                <ul class="d-flex justify-content-center" style="gap:20px">
                                     <li><img src="https://forgealumnus.com/storage/Gallery/associate/32/tua4d5yCddrD7LRtQHbpPcyc4JlA6Hp0PKKpkIKy.png">
                                     </li>
                                     <li><img src="https://forgealumnus.com/storage/Gallery/associate/37/OctRqzqCQqnQ848XQ1Ux0rYNaga4o6JSUrTkKAF6.png">
@@ -82,16 +98,16 @@
                                 aria-label="Slide 5"></button>
                         </div>
                     </div>
-                    </div>
-                    
-
                 </div>
             </div>
-            <!-- <div class="col-md-6 col-xs-12 col-sm-12 login_form "> -->
-            <div class="col-md-6 col-xs-12 col-sm-12 login_form p-5 ">
-                <div class="container-fluid p-3 mt-5">
+            <div class="col-md-6 col-xs-12 col-sm-12 login_form p-5">
+                <div class="d-flex ">
+                    <img class="mob-logo" src="asset\forgekey_logwo.png" height="50" width="auto">
+                </div>
+                <div class="container-fluid p-3 mt-5 ">
                     <div class="row mt-3">
-                        <h6 class="fw-light">Log in and continue <br> <span style="opacity: 0.5; font-size: small; ">your journey of growth and excellence.</span></h6>
+                        <h6 class="fw-light  d-flex flex-column justify-content-center">Log in and continue</h6>
+                        <span style="opacity: 0.5; font-size: small; " class="d-flex flex-column justify-content-center">your journey of growth and excellence.</span>
                     </div>
 
                     <div class="row mt-2">
@@ -99,7 +115,7 @@
                             <div class="row">
                                 <div class="form-group input-group mb-3">
                                     <input type="email" name="email" id="email" class="form-control p-2"
-                                        placeholder="Email" aria-label="Username" required>
+                                        placeholder="Enter your email" aria-label="Username" required>
                                     <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
                                     <div class="invalid-feedback d-flex text-align-left" style="font-size:x-small;">
                                         Email required.
@@ -108,68 +124,171 @@
                             </div>
                             <div class="row">
                                 <div class="form-group input-group mt-2">
-                                    <input type="password" name="password" id="password" class="form-control p-2 "
-                                        placeholder="Password" aria-label="Password" required>
-                                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
-                                    <div class="invalid-feedback d-flex text-align-left " style="font-size:x-small">
+                                    <input type="password" name="password" id="password" class="form-control p-2"
+                                        placeholder="Enter your password" aria-label="Password" required>
+                                    <span class="input-group-text"><i class="fa-solid fa-eye" id="togglePassword" style="cursor: pointer;"></i></span>
+                                    <div class="invalid-feedback d-flex text-align-left" style="font-size:x-small;">
                                         Password required.
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group d-flex justify-content-center  mt-4">
-                                <input id="customCheck1" type="checkbox" checked="" class="custom-control-input">
-                                <label for="customCheck1" class="custom-control-label">Remember me</label>
+                            <div class="form-group d-flex justify-content-between mt-4">
+                                <div><input id="customCheck1" type="checkbox" checked="" class="custom-control-input">
+                                    <label for="customCheck1" class="custom-control-label">Remember me</label></div>
+                                <div class="row">
+                                    <a href="https://forgealumnus.com/forge/forgot/password"
+                                    style="font-weight: 500; text-decoration: none;">Forgot password?</a>
+                                </div>
                             </div>
                             <div class="row d-flex justify-content-center mt-2">
                                 <input type="submit" value="Login" class="btn btn-primary">
                             </div>
                         </form>
-                    </div>
-                    <div class="row">
-                        <p>Forgot password? <a href="https://forgealumnus.com/forge/forgot/password">click here</a></p>
-                    </div>
+                    <!-- <div class="row">
+                        <a href="https://forgealumnus.com/forge/forgot/password"
+                                style="font-weight: 500;">Forgot password?</a>
+                    </div> -->
                 </div>
+                
+            </div>
+            <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center " style="font-size: smaller;">
+                <span ><a href="https://forgealumnus.com/" style="text-decoration: none;">© ForgeAlumnus |</a></span>
+                <span ><a href="https://forgealumnus.com/contact-us" style="text-decoration: none;">Contact Us |</a></span>
+                <span ><a href="https://forgealumnus.com/privacy-policy" style="text-decoration: none;">Privacy |</a></span>
+                <span ><a href="https://forgealumnus.com/terms-of-use" style="text-decoration: none;">Terms</a></span>
             </div>
         </div>
+        <!-- </div> -->
     </div>
-    <!-- Footer -->
-    <!-- <div class="container-fluid text-center footer">
-        <p style="font-size:xx-small; display: flex; justify-content: center; opacity: 0.8;">Copyright Forge Alumnus Services Pvt. Ltd © 2021-2024. All Rights Reserved.</p>
-    </div> -->
 
+    <!-- Add Particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
+        // Initialize particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 60,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#000000' // Change color to black
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#000000', // Change line color to black
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
                         }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
 
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
+        // Toggle password visibility
+        document.getElementById('togglePassword').addEventListener('click', function (e) {
+            // Toggle the type attribute
+            const password = document.getElementById('password');
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+
+            // Toggle the eye icon
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXlRWl3ecld3mJ3p8JI7lflFhbWIe4GkSyboJfElU4rK3s4ojb6FD6b21rsD"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNRSgOrOB3T+7JN6KgJgTxPTLPTuPbf6aSEbrC7d4E2l5bE26sKUEHlEIW0C8Hx" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGqFnmTtlZCHy8R8KL5QOP6zM1z0vZA9uGIlRvnD/7g/XE7AB5GOq2CMu1T"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="script.js"></script> -->
+        integrity="sha384-cVKIPhGhtRjyqtnC4e0so3WzFk4nvW5o2O1fBqylB3R1j9KZgh2T2CNQj89W9iVo" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
