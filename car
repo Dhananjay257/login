@@ -1,0 +1,58 @@
+                 <div id="carouselExampleIndicators" class="carousel bg-white mt-4" data-bs-ride="carousel">
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <ul class="d-flex justify-content-around">
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/ItHHirt1yunGICMy9J8ynz7GAa9FjYgMGAT2HBTB.png"></li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/35/VvpoWqmgcF8Hcx0CHGNO5dtE6xnsBLZGrTl3k7xE.png"></li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/39/16PYUojhJIRVaBwB9kGqzOH1u7dcxFK2ALVrJsky.jpg"></li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png"></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item ">
+                                <ul class="d-flex justify-content-around">
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/32/tua4d5yCddrD7LRtQHbpPcyc4JlA6Hp0PKKpkIKy.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/37/OctRqzqCQqnQ848XQ1Ux0rYNaga4o6JSUrTkKAF6.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item ">
+                                <ul class="d-flex justify-content-around" >
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/32/tua4d5yCddrD7LRtQHbpPcyc4JlA6Hp0PKKpkIKy.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/37/OctRqzqCQqnQ848XQ1Ux0rYNaga4o6JSUrTkKAF6.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item">
+                                <ul class="d-flex justify-content-around" >
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate//ItHHirt1yunGICMy9J8ynz7GAa9FjYgMGAT2HBTB.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/35/VvpoWqmgcF8Hcx0CHGNO5dtE6xnsBLZGrTl3k7xE.png">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/39/16PYUojhJIRVaBwB9kGqzOH1u7dcxFK2ALVrJsky.jpg">
+                                    </li>
+                                    <li><img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                    </div>
+                </div>

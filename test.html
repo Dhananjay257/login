@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        html, body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f6f6f9;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .carousel {
+            width: 100%;
+            height: 120px;
+        }
+
+        .carousel-inner img {
+            height: 100px;
+            object-fit: cover;
+            width: 100px
+        }
+
+        .carousel-item {
+            min-height: 120px;
+            max-height: 120px;
+        }
+
+        ul.d-flex {
+            justify-content: center;
+            padding-left: 0;
+        }
+
+        ul.d-flex li {
+            list-style: none;
+            padding: 0 10px;
+        }
+
+        .custom-container {
+            background-color: white;
+            box-shadow: 0px 0px 3px;
+            border-radius: 6px;
+        }
+
+        .mob-logo {
+            display: none;
+        }
+
+        .company__info {
+            background-color: #1F3865;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .company__info {
+                display: none;
+            }
+            .mob-logo {
+                display: block;
+            }
+
+            .login_form {
+                width: 100%;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+        }
+
+        .login_form {
+            background-color: #fff;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border-top: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        form {
+            padding: 0 2em;
+        }
+
+        .form__input {
+            width: 100%;
+            border: 0px solid transparent;
+            border-radius: 0;
+            border-bottom: 1px solid #aaa;
+            padding: 1em .5em .5em;
+            padding-left: 2em;
+            outline: none;
+            margin: 1.5em auto;
+            transition: all .5s ease;
+        }
+
+        .form__input:focus {
+            border-bottom-color: #008080;
+            box-shadow: 0 0 5px rgba(0, 80, 80, .4);
+            border-radius: 4px;
+        }
+
+        .btn {
+            transition: all .5s ease;
+            width: 70%;
+            border-radius: 30px;
+            color: #1F3865;
+            font-weight: 600;
+            background-color: #fff;
+            border: 1px solid #1F3865;
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background-color: #1F3865;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 471px) {
+            .container {
+                height: 100%;
+            }
+            #particles-js {
+                display: none;
+            }
+        }
+
+        input::placeholder {
+            font-size: small;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        a {
+            color: #1F3865;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Main Content -->
+    <div class="container custom-container row m-auto px-0 bg-white ">
+        <div class="col-md-6 text-align-left company__info px-0">
+            <div class="d-flex justify-content-left">
+                <img src="asset\Logo W.png" height="70" width="auto">
+            </div>
+            <div class="fa-head d-flex flex-column align-items-center pt-5 pb-5" style="text-align: left;">
+                <h3 class="ps-4 display-5 mt-2">
+                    Welcome to <br> Forge Alumnus
+                </h3>
+                <p style="opacity: 0.8;">The Premier Industry Institute Interaction <br> and Career Discovery Platform</p>
+            </div>
+
+            <div class="l-head mt-5 mb-5">
+                <h5 class="fw-600 d-flex justify-content-center">Our Associates</h5>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators/dots -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                    </ol>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <!-- First container of 4 images -->
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <img src="https://forgealumnus.com/storage/Gallery/associate//ItHHirt1yunGICMy9J8ynz7GAa9FjYgMGAT2HBTB.png">
+                                    
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/35/VvpoWqmgcF8Hcx0CHGNO5dtE6xnsBLZGrTl3k7xE.png">
+                                
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/39/16PYUojhJIRVaBwB9kGqzOH1u7dcxFK2ALVrJsky.jpg">
+                                
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png" alt="">                            </div>
+                        </div>
+
+                        <!-- Second container of 4 images -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="https://forgealumnus.com/storage/Gallery/associate//ItHHirt1yunGICMy9J8ynz7GAa9FjYgMGAT2HBTB.png">
+                                    
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/35/VvpoWqmgcF8Hcx0CHGNO5dtE6xnsBLZGrTl3k7xE.png">
+                                
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/39/16PYUojhJIRVaBwB9kGqzOH1u7dcxFK2ALVrJsky.jpg">
+                                
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png" alt="">                            </div>
+                        </div>
+
+                        <!-- Third container of 4 images -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="https://forgealumnus.com/storage/Gallery/associate//ItHHirt1yunGICMy9J8ynz7GAa9FjYgMGAT2HBTB.png">
+                                    
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/35/VvpoWqmgcF8Hcx0CHGNO5dtE6xnsBLZGrTl3k7xE.png">
+                                
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/39/16PYUojhJIRVaBwB9kGqzOH1u7dcxFK2ALVrJsky.jpg">
+                                
+                                <img src="https://forgealumnus.com/storage/Gallery/associate/29/HbYlbE6VdGtgUoKJ3PAkqg9P6xOhR29GtJbgd7zz.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls/Prev/Next buttons -->
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12 col-sm-12 login_form p-5">
+            <div class="mob-logo d-flex justify-content-center mb-4">
+                <img src="asset\Logo W.png" height="70" width="auto">
+            </div>
+            <div class="d-flex justify-content-center">
+                <h2>Login</h2>
+            </div>
+            <form class="w-100">
+                <div class="input-group w-100 d-flex justify-content-center">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-white border-0 rounded-0">
+                            <i class="fa fa-user-o text-secondary" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <input type="text" name="username" class="form__input w-75 " placeholder="Username">
+                </div>
+                <div class="input-group d-flex justify-content-center">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-white border-0 rounded-0">
+                            <i class="fa fa-lock text-secondary" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <input type="password" name="password" class="form__input w-75" placeholder="Password">
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                    <button type="submit" class="btn mt-2">Login</button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="fw-normal mt-2 text-center">Don't have an account? <a href="#">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap & JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXlYy3+5TTkV0pzl6jDUI65Ih4+Q1g3zO6lLWVuLjlEaI1uFOF26E+hmdF5e" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhG81rj9/RytWhJ4erW5VFLvLY+Sv3HgOvz5Yl8fkPnvx9GILaCWlCP1F6jG" crossorigin="anonymous">
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</body>
+
+</html>
